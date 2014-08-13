@@ -1,0 +1,63 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+
+
+
+
+</head>
+
+	<body> 
+		<div data-role="page" id="pagina1" data-dialog="true">
+			<div data-role="header">
+				<h1>  Titlu header </h1>
+			</div>
+			<div data-role="main">
+				<p> Continutul divului main din pagina 1  </p> 
+				<a href="#pagina2" data-transition="flip">  Apasa ptr pagina doi </a>
+			</div>
+			<div data-role="footer">
+				<h1> Footer blabla &copy; 2014  </h1>
+			</div>
+			
+		</div>		
+		
+		<div data-role="page" id="pagina2">
+			<div data-role="header">
+				<h1>  Titlu header </h1>
+			</div>
+			<div data-role="main">
+				<p> Continutul divului main din pagina doi </p> 
+				<!-- Trei moduri de a defini butoanele :  -->
+				<input type="button" value="buton1"> 
+				<button class="ui-btn"> buton 2 </button>
+				<hr> 
+				<!-- Butoane afisate orizontal cu data-role control group si data-type orizontal  :  -->
+				<div data-role="controlgroup" data-type="horizontal"> <!-- data-type orizontal  :  -->
+				<a href="#" class="ui-btn" data-rel="back"> Buton 3 </a> <!-- data-rel back - seteaza butonul pentru back de oriunde din aplicatie  :  -->
+				<a href="#" class="ui-btn ui-corner-all" > Buton 4 </a> 
+				<a href="#" class="ui-btn"> Buton 5 </a> 
+				</div>
+				<!-- Butoane afisate vertical  cu data-type orizontal  :  -->
+				<div data-role="controlgroup" data-type="vertical">
+				<a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left"> Buton 3 </a> 
+				<a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-shadow"> Buton 4 </a> 
+				<a href="#" class="ui-btn ui-corner-all ui-btn-inline"> Buton 5 </a> 
+				</div>
+				
+				<a href="#pagina1" data-transition="slide" data-direction="reverse" class="ui-btn" >click</a>
+			</div>
+			<div data-role="footer">
+				<h1> Footer blabla &copy; 2014  </h1>
+			</div>
+			
+		</div>	
+	</body>
+
+</html>
